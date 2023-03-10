@@ -204,6 +204,73 @@
 #define SDM_EXPORT_POWER                              0x0502                    //  W           |         |         |         |         |         |    1    |    1    |
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+/---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//      REGISTERS LIST FOR SDM DEVICES                                                                                                                                |
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//      REGISTER NAME                                 REGISTER ADDRESS              UNIT        | SDM630  | SDM230  | SDM220  | SDM120CT| SDM120  | SDM72D  | SDM72 V2|
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#define EM4M_PHASE_1_VOLTAGE                          0x0000                    //  V           |    1    |    1    |    1    |    1    |    1    |         |    1    |         
+#define EM4M_PHASE_2_VOLTAGE                          0x0002                    //  V           |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_3_VOLTAGE                          0x0004                    //  V           |    1    |         |         |         |         |         |    1    |
+#define EM4M_AVERAGE_L_TO_N_VOLTS                     0x0006                    //  A           |    1    |    1    |    1    |    1    |    1    |         |    1    |
+#define EM4M_LINE_1_TO_LINE_2_VOLTS                   0x0008                    //  A           |    1    |         |         |         |         |         |    1    |
+#define EM4M_LINE_2_TO_LINE_3_VOLTS                   0x000A                    //  A           |    1    |         |         |         |         |         |    1    |
+#define EM4M_LINE_3_TO_LINE_1_VOLTS                   0x000C                    //  W           |    1    |    1    |    1    |    1    |    1    |         |    1    |
+#define EM4M_AVERAGE_LINE_TO_LINE_VOLTS               0x000E                    //  W           |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_1_CURRENT                          0x0010                    //  W           |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_2_CURRENT                          0x0012                    //  VA          |    1    |    1    |    1    |    1    |    1    |         |    1    |
+#define EM4M_PHASE_3_CURRENT                          0x0014                    //  VA          |    1    |         |         |         |         |         |    1    |
+#define EM4M_AVERAGE_LINE_CURRENT                     0x0016                    //  VA          |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_1_POWER                            0x0018                    //  VAr         |    1    |    1    |    1    |    1    |    1    |         |    1    |
+#define EM4M_PHASE_2_POWER                            0x001A                    //  VAr         |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_3_POWER                            0x001C                    //  VAr         |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_1_REACTIVE_POWER                   0x001E                    //              |    1    |    1    |    1    |    1    |    1    |         |    1    |
+#define EM4M_PHASE_2_REACTIVE_POWER                   0x0020                    //              |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_3_REACTIVE_POWER                   0x0022                    //              |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_1_APPARENT_POWER                   0x0024                    //  Degrees     |    1    |    1    |    1    |    1    |         |         |         |
+#define EM4M_PHASE_2_APPARENT_POWER                   0x0026                    //  Degrees     |    1    |         |         |         |         |         |         |
+#define EM4M_PHASE_3_APPARENT_POWER                   0x0028                    //  Degrees     |    1    |         |         |         |         |         |         |
+#define EM4M_TOTAL_SYSTEM_POWER                       0x002A                    //  V           |    1    |         |         |         |         |         |    1    |
+#define EM4M_TOTAL_SYSTEM_REACTIVE_POWER              0x002C                    //  A           |    1    |         |         |         |         |         |    1    |
+#define EM4M_TOTAL_SYSTEM_APPARENT_POWER              0x002E                    //  A           |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_1_POWER_FACTOR                     0x0030                    //  VA          |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_2_POWER_FACTOR                     0x0032                    //  VAr         |    1    |         |         |         |         |         |    1    |
+#define EM4M_PHASE_3_POWER_FACTOR                     0x0034                    //              |    1    |         |         |         |         |         |    1    |
+#define EM4M_AVERAGE_POWER_FACTOR                     0x0036                    //  Degrees     |    1    |         |         |         |         |         |         |
+#define EM4M_FREQUENCY                                0x0038                    //  Hz          |    1    |    1    |    1    |    1    |    1    |         |    1    |
+#define SDM_IMPORT_ACTIVE_ENERGY                      0x003A                    //  kWh/MWh     |    1    |    1    |    1    |    1    |    1    |    1    |    1    |
+#define SDM_EXPORT_ACTIVE_ENERGY                      0x003C                    //  kWh/MWh     |    1    |    1    |    1    |    1    |    1    |    1    |    1    |
+#define SDM_IMPORT_REACTIVE_ENERGY                    0x003E                    //  kVArh/MVArh |    1    |    1    |    1    |    1    |    1    |         |         |
+#define SDM_EXPORT_REACTIVE_ENERGY                    0x0040                    //  kVArh/MVArh |    1    |    1    |    1    |    1    |    1    |         |         |
+#define SDM_VAH_SINCE_LAST_RESET                      0x0042                    //  kVAh/MVAh   |    1    |         |         |         |         |         |         |
+#define SDM_AH_SINCE_LAST_RESET                       0x0044                    //  Ah/kAh      |    1    |         |         |         |         |         |         |
+#define SDM_TOTAL_SYSTEM_POWER_DEMAND                 0x0046                    //  W           |    1    |    1    |         |         |         |         |         |
+#define SDM_MAXIMUM_TOTAL_SYSTEM_POWER_DEMAND         0x0048                    //  W           |    1    |    1    |         |         |         |         |         |
+#define SDM_CURRENT_SYSTEM_POSITIVE_POWER_DEMAND      0x004A                    //  W           |         |    1    |         |         |         |         |         |
+#define SDM_MAXIMUM_SYSTEM_POSITIVE_POWER_DEMAND      0x004C                    //  W           |         |    1    |         |         |         |         |         |
+#define SDM_CURRENT_SYSTEM_REVERSE_POWER_DEMAND       0x004E                    //  W           |         |    1    |         |         |         |         |         |
+#define SDM_MAXIMUM_SYSTEM_REVERSE_POWER_DEMAND       0x0050                    //  W           |         |    1    |         |         |         |         |         |
+#define SDM_TOTAL_SYSTEM_VA_DEMAND                    0x0052                    //  VA          |    1    |         |         |         |         |         |         |
+#define SDM_MAXIMUM_TOTAL_SYSTEM_VA_DEMAND            0x0054                    //  VA          |    1    |         |         |         |         |         |         |
+#define SDM_NEUTRAL_CURRENT_DEMAND                    0x0056                    //  A           |    1    |         |         |         |         |         |         |
+#define SDM_MAXIMUM_NEUTRAL_CURRENT                   0x0058                    //  A           |    1    |         |         |         |         |         |         |
+#define SDM_LINE_1_TO_LINE_2_VOLTS                    0x005A                    //  V           |    1    |         |         |         |         |         |    1    |
+#define SDM_LINE_2_TO_LINE_3_VOLTS                    0x005C                    //  V           |    1    |         |         |         |         |         |    1    |
+#define SDM_LINE_3_TO_LINE_1_VOLTS                    0x005E                    //  V           |    1    |         |         |         |         |         |    1    |
+#define SDM_AVERAGE_LINE_TO_LINE_VOLTS                0x0060                    //  V           |    1    |         |         |         |         |         |    1    |
+#define SDM_NEUTRAL_CURRENT                           0x0062                    //  A           |    1    |         |         |         |         |         |    1    |
+#define SDM_PHASE_1_LN_VOLTS_THD                      0x0064                    //  %           |    1    |         |         |         |         |         |         |
+#define SDM_PHASE_2_LN_VOLTS_THD                      0x0066                    //  %           |    1    |         |         |         |         |         |         |
+#define SDM_PHASE_3_LN_VOLTS_THD                      0x0068                    //  %           |    1    |         |         |         |         |         |         |
+#define SDM_PHASE_1_CURRENT_THD                       0x006A                    //  %           |    1    |         |         |         |         |         |         |
+#define SDM_PHASE_2_CURRENT_THD                       0x006C                    //  %           |    1    |         |         |         |         |         |         |
+#define SDM_PHASE_3_CURRENT_THD                       0x006E                    //  %           |    1    |         |         |         |         |         |         |
+#define SDM_AVERAGE_LINE_TO_NEUTRAL_VOLTS_THD         0x006F                    //  %           |    1    |         |         |         |         |         |         |
+#define SDM_AVERAGE_LINE_CURRENT_THD                  0x0070                    //  %           |    1    |         |         |         |         |         |         |
+#define SDM_TOTAL_SYSTEM_POWER_FACTOR_INV             0x02AC                    //              |    1    |         |         |         |         |         |         |
+#define SDM_PHASE_1_CURRENT_DEMAND                    0x02C6                    //  A           |    1    |    1    |         |         |         |         |         |
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 //---------------------------------------------------------------------------------------------------------
 //      REGISTERS LIST FOR DDM DEVICE                                                                     |
 //---------------------------------------------------------------------------------------------------------
