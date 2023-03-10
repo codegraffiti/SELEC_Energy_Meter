@@ -209,65 +209,65 @@
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //      REGISTER NAME                                 REGISTER ADDRESS              UNIT        | SDM630  | SDM230  | SDM220  | SDM120CT| SDM120  | SDM72D  | SDM72 V2|
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#define EM4M_PHASE_1_VOLTAGE                          0x0000                    //  V           |    1    |    1    |    1    |    1    |    1    |         |    1    |         
-#define EM4M_PHASE_2_VOLTAGE                          0x0002                    //  V           |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_3_VOLTAGE                          0x0004                    //  V           |    1    |         |         |         |         |         |    1    |
-#define EM4M_AVERAGE_L_TO_N_VOLTS                     0x0006                    //  A           |    1    |    1    |    1    |    1    |    1    |         |    1    |
-#define EM4M_LINE_1_TO_LINE_2_VOLTS                   0x0008                    //  A           |    1    |         |         |         |         |         |    1    |
-#define EM4M_LINE_2_TO_LINE_3_VOLTS                   0x000A                    //  A           |    1    |         |         |         |         |         |    1    |
-#define EM4M_LINE_3_TO_LINE_1_VOLTS                   0x000C                    //  W           |    1    |    1    |    1    |    1    |    1    |         |    1    |
-#define EM4M_AVERAGE_LINE_TO_LINE_VOLTS               0x000E                    //  W           |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_1_CURRENT                          0x0010                    //  W           |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_2_CURRENT                          0x0012                    //  VA          |    1    |    1    |    1    |    1    |    1    |         |    1    |
-#define EM4M_PHASE_3_CURRENT                          0x0014                    //  VA          |    1    |         |         |         |         |         |    1    |
-#define EM4M_AVERAGE_LINE_CURRENT                     0x0016                    //  VA          |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_1_POWER                            0x0018                    //  VAr         |    1    |    1    |    1    |    1    |    1    |         |    1    |
-#define EM4M_PHASE_2_POWER                            0x001A                    //  VAr         |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_3_POWER                            0x001C                    //  VAr         |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_1_REACTIVE_POWER                   0x001E                    //              |    1    |    1    |    1    |    1    |    1    |         |    1    |
-#define EM4M_PHASE_2_REACTIVE_POWER                   0x0020                    //              |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_3_REACTIVE_POWER                   0x0022                    //              |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_1_APPARENT_POWER                   0x0024                    //  Degrees     |    1    |    1    |    1    |    1    |         |         |         |
-#define EM4M_PHASE_2_APPARENT_POWER                   0x0026                    //  Degrees     |    1    |         |         |         |         |         |         |
-#define EM4M_PHASE_3_APPARENT_POWER                   0x0028                    //  Degrees     |    1    |         |         |         |         |         |         |
-#define EM4M_TOTAL_POWER                              0x002A                    //  V           |    1    |         |         |         |         |         |    1    |
-#define EM4M_TOTAL_REACTIVE_POWER                     0x002C                    //  A           |    1    |         |         |         |         |         |    1    |
-#define EM4M_TOTAL_APPARENT_POWER                     0x002E                    //  A           |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_1_POWER_FACTOR                     0x0030                    //  VA          |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_2_POWER_FACTOR                     0x0032                    //  VAr         |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_3_POWER_FACTOR                     0x0034                    //              |    1    |         |         |         |         |         |    1    |
-#define EM4M_AVERAGE_POWER_FACTOR                     0x0036                    //  Degrees     |    1    |         |         |         |         |         |         |
-#define EM4M_FREQUENCY                                0x0038                    //  Hz          |    1    |    1    |    1    |    1    |    1    |         |    1    |
-#define EM4M_TOTAL_NET_ENERGY                         0x003A                    //  kWh/MWh     |    1    |    1    |    1    |    1    |    1    |    1    |    1    |
-#define EM4M_TOTAL_NET_REACTIVE_POWER                 0x003C                    //  kWh/MWh     |    1    |    1    |    1    |    1    |    1    |    1    |    1    |
-#define EM4M_TOTAL_NET_APPARENT_POWER                 0x003E                    //  kVArh/MVArh |    1    |    1    |    1    |    1    |    1    |         |         |
-#define EM4M_TOTAL_NET_ENERGY_DG                      0x0040                    //  kVArh/MVArh |    1    |    1    |    1    |    1    |    1    |         |         |
-#define EM4M_TOTAL_NET_REACTIVE_POWER_DG              0x0042                    //  kVAh/MVAh   |    1    |         |         |         |         |         |         |
-#define EM4M_TOTAL_NET_ACTIVE_POWER_DG                0x0044                    //  Ah/kAh      |    1    |         |         |         |         |         |         |
-#define EM4M_MAX_DMD_ACTIVE_POWER                     0x0046                    //  W           |    1    |    1    |         |         |         |         |         |
-#define EM4M_MAX_DMD_REACTIVE_POWER                   0x0048                    //  W           |    1    |    1    |         |         |         |         |         |
-#define EM4M_MAX_DMD_APPARENT_POWER                   0x004A                    //  W           |         |    1    |         |         |         |         |         |
-#define EM4M_PHASE_1_IMPORT_ENERGY                    0x004C                    //  W           |         |    1    |         |         |         |         |         |
-#define EM4M_PHASE_2_IMPORT_ENERGY                    0x004E                    //  W           |         |    1    |         |         |         |         |         |
-#define EM4M_PHASE_3_IMPORT_ENERGY                    0x0050                    //  W           |         |    1    |         |         |         |         |         |
-#define EM4M_PHASE_1_EXPORT_ENERGY                    0x0052                    //  VA          |    1    |         |         |         |         |         |         |
-#define EM4M_PHASE_2_EXPORT_ENERGY                    0x0054                    //  VA          |    1    |         |         |         |         |         |         |
-#define EM4M_PHASE_3_EXPORT_ENERGY                    0x0056                    //  A           |    1    |         |         |         |         |         |         |
-#define EM4M_TOTAL_IMPORT_ENERGY                      0x0058                    //  A           |    1    |         |         |         |         |         |         |
-#define EM4M_TOTAL_EXPORT_ENERGY                      0x005A                    //  V           |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_1_IMPORT_REACTIVE_POWER            0x005C                    //  V           |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_2_IMPORT_REACTIVE_POWER            0x005E                    //  V           |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_3_IMPORT_REACTIVE_POWER            0x0060                    //  V           |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_1_EXPORT_REACTIVE_POWER            0x0062                    //  A           |    1    |         |         |         |         |         |    1    |
-#define EM4M_PHASE_2_EXPORT_REACTIVE_POWER            0x0064                    //  %           |    1    |         |         |         |         |         |         |
-#define EM4M_PHASE_3_EXPORT_REACTIVE_POWER            0x0066                    //  %           |    1    |         |         |         |         |         |         |
-#define EM4M_TOTAL_IMPORT_REACTIVE_ENERGY             0x0068                    //  %           |    1    |         |         |         |         |         |         |
-#define EM4M_TOTAL_EXPORT_REACTIVE_ENERGY             0x006A                    //  %           |    1    |         |         |         |         |         |         |
-#define EM4M_PHASE_1_ENERGY                           0x006C                    //  %           |    1    |         |         |         |         |         |         |
-#define EM4M_PHASE_2_ENERGY                           0x006E                    //  %           |    1    |         |         |         |         |         |         |
-#define EM4M_PHASE_3_ENERGY                           0x0070                    //  %           |    1    |         |         |         |         |         |         |
-#define EM4M_SERIAL_NUMBER                            0x02AC                    //              |    1    |         |         |         |         |         |         |
-#define EM4M_DG_SENSING                               0x02C6                    //              |    1    |    1    |         |         |         |         |         |
+#define EM4M_PHASE_1_VOLTAGE                          0x0000                    //  V                    
+#define EM4M_PHASE_2_VOLTAGE                          0x0002                    //  V           
+#define EM4M_PHASE_3_VOLTAGE                          0x0004                    //  V           
+#define EM4M_AVERAGE_L_TO_N_VOLTS                     0x0006                    //  V           
+#define EM4M_LINE_1_TO_LINE_2_VOLTS                   0x0008                    //  V           
+#define EM4M_LINE_2_TO_LINE_3_VOLTS                   0x000A                    //  V           
+#define EM4M_LINE_3_TO_LINE_1_VOLTS                   0x000C                    //  V           
+#define EM4M_AVERAGE_LINE_TO_LINE_VOLTS               0x000E                    //  V           
+#define EM4M_PHASE_1_CURRENT                          0x0010                    //  A           
+#define EM4M_PHASE_2_CURRENT                          0x0012                    //  A          
+#define EM4M_PHASE_3_CURRENT                          0x0014                    //  A          
+#define EM4M_AVERAGE_LINE_CURRENT                     0x0016                    //  A          
+#define EM4M_PHASE_1_POWER                            0x0018                    //  KW         
+#define EM4M_PHASE_2_POWER                            0x001A                    //  KW         
+#define EM4M_PHASE_3_POWER                            0x001C                    //  KW         
+#define EM4M_PHASE_1_REACTIVE_POWER                   0x001E                    //  KVAr            
+#define EM4M_PHASE_2_REACTIVE_POWER                   0x0020                    //  KVAr
+#define EM4M_PHASE_3_REACTIVE_POWER                   0x0022                    //  KVAr
+#define EM4M_PHASE_1_APPARENT_POWER                   0x0024                    //  KVA
+#define EM4M_PHASE_2_APPARENT_POWER                   0x0026                    //  KVA
+#define EM4M_PHASE_3_APPARENT_POWER                   0x0028                    //  KVA
+#define EM4M_TOTAL_POWER                              0x002A                    //  KW
+#define EM4M_TOTAL_REACTIVE_POWER                     0x002C                    //  KVAr
+#define EM4M_TOTAL_APPARENT_POWER                     0x002E                    //  KVA
+#define EM4M_PHASE_1_POWER_FACTOR                     0x0030                    //  
+#define EM4M_PHASE_2_POWER_FACTOR                     0x0032                    //  
+#define EM4M_PHASE_3_POWER_FACTOR                     0x0034                    //  
+#define EM4M_AVERAGE_POWER_FACTOR                     0x0036                    //  
+#define EM4M_FREQUENCY                                0x0038                    //  Hz
+#define EM4M_TOTAL_NET_ENERGY                         0x003A                    //  KWh
+#define EM4M_TOTAL_NET_REACTIVE_POWER                 0x003C                    //  KVArh
+#define EM4M_TOTAL_NET_APPARENT_POWER                 0x003E                    //  KVAh
+#define EM4M_TOTAL_NET_ENERGY_DG                      0x0040                    //  KWh
+#define EM4M_TOTAL_NET_REACTIVE_POWER_DG              0x0042                    //  KVArh
+#define EM4M_TOTAL_NET_ACTIVE_POWER_DG                0x0044                    //  KVAh
+#define EM4M_MAX_DMD_ACTIVE_POWER                     0x0046                    //  
+#define EM4M_MAX_DMD_REACTIVE_POWER                   0x0048                    //  
+#define EM4M_MAX_DMD_APPARENT_POWER                   0x004A                    //  
+#define EM4M_PHASE_1_IMPORT_ENERGY                    0x004C                    //  
+#define EM4M_PHASE_2_IMPORT_ENERGY                    0x004E                    // 
+#define EM4M_PHASE_3_IMPORT_ENERGY                    0x0050                    // 
+#define EM4M_PHASE_1_EXPORT_ENERGY                    0x0052                    // 
+#define EM4M_PHASE_2_EXPORT_ENERGY                    0x0054                    // 
+#define EM4M_PHASE_3_EXPORT_ENERGY                    0x0056                    //
+#define EM4M_TOTAL_IMPORT_ENERGY                      0x0058                    //
+#define EM4M_TOTAL_EXPORT_ENERGY                      0x005A                    //
+#define EM4M_PHASE_1_IMPORT_REACTIVE_POWER            0x005C                    //
+#define EM4M_PHASE_2_IMPORT_REACTIVE_POWER            0x005E                    //
+#define EM4M_PHASE_3_IMPORT_REACTIVE_POWER            0x0060                    //
+#define EM4M_PHASE_1_EXPORT_REACTIVE_POWER            0x0062                    //
+#define EM4M_PHASE_2_EXPORT_REACTIVE_POWER            0x0064                    //
+#define EM4M_PHASE_3_EXPORT_REACTIVE_POWER            0x0066                    //
+#define EM4M_TOTAL_IMPORT_REACTIVE_ENERGY             0x0068                    //
+#define EM4M_TOTAL_EXPORT_REACTIVE_ENERGY             0x006A                    //
+#define EM4M_PHASE_1_ENERGY                           0x006C                    //
+#define EM4M_PHASE_2_ENERGY                           0x006E                    //
+#define EM4M_PHASE_3_ENERGY                           0x0070                    //
+#define EM4M_SERIAL_NUMBER                            0x02AC                    //
+#define EM4M_DG_SENSING                               0x02C6                    //
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //---------------------------------------------------------------------------------------------------------
